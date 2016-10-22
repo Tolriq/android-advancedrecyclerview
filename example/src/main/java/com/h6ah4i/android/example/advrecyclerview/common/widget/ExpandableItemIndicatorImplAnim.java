@@ -37,6 +37,7 @@ class ExpandableItemIndicatorImplAnim extends ExpandableItemIndicator.Impl {
     public void onInit(Context context, AttributeSet attrs, int defStyleAttr, ExpandableItemIndicator thiz) {
         View v = LayoutInflater.from(context).inflate(R.layout.widget_expandable_item_indicator, thiz, true);
         mImageView = (AppCompatImageView) v.findViewById(R.id.image_view);
+        mImageView.setColorFilter(333333);
     }
 
     @Override
